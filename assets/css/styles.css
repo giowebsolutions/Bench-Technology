@@ -451,13 +451,213 @@ UL LI {
   display: -ms-grid;
   display: grid;
   grid-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #fff;
-  padding: .75rem 0;
+  padding: 1rem 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 .brands__item {
   grid-row: row;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer {
+  background-color: #fff;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.footer__col H1, .footer__col P {
+  margin: .75rem 0;
+}
+
+.footer__col .primary-color {
+  font-weight: 700;
+}
+
+.footer__col .twitter__item A {
+  padding: 5px 15px;
+  background: #2b2a2a;
+  color: #fff;
+  display: inline-block;
+}
+
+.footer__col .twitter__item .post-time {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.footer__col B {
+  font-weight: 600;
+}
+
+.footer__col H1 {
+  font-weight: 300;
+}
+
+.footer .contact .contact__item {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.footer .contact .contact__item I {
+  margin-right: 10px;
+}
+
+.footer .newsletter {
+  margin-bottom: 0;
+}
+
+.footer .form-group INPUT {
+  padding: 7px;
+  font-style: italic;
+  width: 50%;
+}
+
+.footer .form-group BUTTON {
+  background: #2b2a2a;
+  padding: 4px 15px;
+  height: 35px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer .form-group BUTTON I {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2b2a2a;
+  margin-top: 50px;
+}
+
+.footer__bottom .container {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bottom__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.footer__bottom__col:nth-of-type(2) {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 14px;
+  font-size: 12px;
+  font-style: italic;
+  width: 20%;
+}
+
+.footer__bottom__col:nth-of-type(3) {
+  width: 35%;
+}
+
+.footer__bottom__col P {
+  color: #fff;
+}
+
+.footer__bottom .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bottom .footer__links__item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bottom .footer__links__item A {
+  color: #fff;
+}
+
+.footer__bottom #backTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -40px;
+  left: 41%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.footer__bottom #backTop I {
+  color: #ca490d;
+  font-size: 18px;
 }
 /*# sourceMappingURL=styles.css.map */
